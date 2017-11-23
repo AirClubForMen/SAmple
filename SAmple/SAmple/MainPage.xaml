@@ -4,10 +4,30 @@
              xmlns:local="clr-namespace:SAmple"
              x:Class="SAmple.MainPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+        <Grid BackgroundColor="LightBlue">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="0" Orientation="Horizontal" Margin="5" HorizontalOptions="FillAndExpand" BackgroundColor="SlateBlue">
+                <Image Source="Icons/06_menu_stack-512.png" IsOpaque="False" Margin="5" HeightRequest="50"  WidthRequest="50" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"/>
+                <Label Text="The Family App" TextColor="White" FontFamily="Fonts/JOKERMAN.ttf#Jokerman" FontSize="Large" BackgroundColor="Transparent"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+                <Image Source="Icons/options_1-512.png" Margin="5" HeightRequest="50"  WidthRequest="50" HorizontalOptions="End" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+            <Frame Grid.Row="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+               </Grid>
+                <ListView x:Name="MainListView"/>
+             </Frame>
+
+        </Grid>
+
     </ContentPage.Content>
 </ContentPage>

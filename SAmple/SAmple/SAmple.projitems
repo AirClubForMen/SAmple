@@ -15,6 +15,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainVM.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml">
@@ -25,5 +26,12 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Fonts\JOKERMAN.TTF" />
+    <Content Include="$(MSBuildThisFileDirectory)Icons\06_menu_stack-512.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Icons\hamburger-menu-icon.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Icons\options_1-512.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Icons\Setting-icon.png" />
   </ItemGroup>
 </Project>
